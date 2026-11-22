@@ -28,7 +28,7 @@
       ]
     }
   },
-  "include":OU32YQ4e gcv [
+  "include": [
     "next-env.d.ts",
     "app/layout.tsx",
     "app/page.tsx",
@@ -38,9 +38,9 @@
     "app/doctor/**/*",
     "app/pricing/**/*",
     "app/services/**/*",
-    "components/*.tsx",
-    "components/*.ts",
-    "components/ui/**/*",
+    "app/admin/**/*",
+    "components/**/*.tsx",
+    "components/**/*.ts",
     "lib/**/*",
     "db/**/*",
     "types/**/*",
@@ -48,8 +48,6 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "components/admin/**",
-    "app/admin/**"
+    "node_modules"
   ]
 }

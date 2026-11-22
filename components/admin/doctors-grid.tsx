@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useMemo, useState, type ChangeEvent } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
@@ -25,7 +25,7 @@ function DoctorCard({ doctor }: { doctor: Doctor }) {
           <Avatar className="size-14 border">
             <AvatarImage src={doctor.avatar || "/placeholder.svg"} alt={doctor.name} />
             <AvatarFallback className="bg-accent text-accent-foreground">
-              {doctor.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
+              {doctor.name.split(" ").map((n: string) => n[0]).join("").slice(0, 2)}
             </AvatarFallback>
           </Avatar>
           <div className="flex flex-1 flex-col gap-1">
@@ -98,7 +98,7 @@ export function DoctorsGrid() {
             placeholder="Search doctors..."
             className="pl-9"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e: ChangeEvent<HTMLInputElement>) => setQuery(e.target.value)}
           />
         </div>
         <Button onClick={() => setOpen(true)}>

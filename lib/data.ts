@@ -53,3 +53,32 @@ export function formatDate(d?: string) {
 
 export const BRANCHES = ["Main", "East"]
 export const APPOINTMENT_STATUSES: AppointmentStatus[] = ["pending", "confirmed", "cancelled", "completed"]
+
+export type Doctor = {
+  id: string
+  name: string
+  specialty: string
+  branch: string
+  rating: number
+  patients: number
+  avatar?: string
+  status: "Available" | "On Leave" | "Busy"
+  email: string
+  phone: string
+}
+
+export const doctors: Doctor[] = [
+  {
+    id: "1",
+    name: "Dr. Md. Fazalunnisa",
+    specialty: "Gynaecologist & Infertility Specialist",
+    branch: "Toli Chowk",
+    rating: 4.9,
+    patients: 280,
+    avatar: "/doctor-portrait.png",
+    status: "Available",
+    email: "fazalunnisa@hirafertility.com",
+    phone: "+91 73372 25251",
+  },
+]
+
