@@ -179,7 +179,7 @@ export function Hero() {
                 className="absolute right-5 top-5 rounded-2xl bg-brand px-5 py-3 text-center text-brand-foreground shadow-lg"
                 style={{ transform: "translateZ(60px)" }}
               >
-                <p className="font-display text-2xl font-bold leading-none">200+</p>
+                <p className="font-display text-2xl font-bold leading-none">500+</p>
                 <p className="mt-1 text-[0.65rem] font-semibold tracking-widest">HAPPY FAMILIES</p>
               </div>
 

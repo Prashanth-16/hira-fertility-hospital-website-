@@ -47,7 +47,7 @@ const values = [
 ]
 
 const stats = [
-  { icon: Users, value: "200+", label: "Happy Families" },
+  { icon: Users, value: "500+", label: "Happy Families" },
   { icon: Award, value: "7+", label: "Years Experience" },
   { icon: Building2, value: "100%", label: "Dedicated Care" },
   { icon: HeartPulse, value: "24/7", label: "Support Available" },
@@ -98,7 +98,7 @@ export default function AboutPage() {
               />
             </div>
             <div className="absolute -left-3 bottom-6 rounded-2xl bg-brand px-6 py-4 text-center text-brand-foreground shadow-lg">
-              <p className="font-display text-3xl font-bold leading-none">200+</p>
+              <p className="font-display text-3xl font-bold leading-none">500+</p>
               <p className="mt-1 text-[0.6rem] font-semibold tracking-widest">FAMILIES BUILT</p>
             </div>
           </div>

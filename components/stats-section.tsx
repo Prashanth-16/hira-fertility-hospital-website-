@@ -1,7 +1,7 @@
 import { Users, Award, Building2, HeartPulse } from "lucide-react"
 
 const stats = [
-  { icon: Users, value: "200+", label: "Happy Families" },
+  { icon: Users, value: "500+", label: "Happy Families" },
   { icon: Award, value: "7+", label: "Years Experience" },
   { icon: Building2, value: "100%", label: "Dedicated Care" },
   { icon: HeartPulse, value: "24/7", label: "Support Available" },
